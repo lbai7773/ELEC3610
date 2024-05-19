@@ -32,7 +32,7 @@ body {
 
 /* Navigation styles */
 .navbar {
-  background-color: #333;
+  background-color: black;
   position: fixed;
   top: 50px; /* Adjusted to start immediately after the brand bar */
   left: 0;

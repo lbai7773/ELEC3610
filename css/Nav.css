@@ -73,7 +73,6 @@
 /* Content */
 .content {
     margin-top: 100px; /* Adjust this value to make space for both brand and navbar */
-    margin-left: 250px; /* Adjust this value to match the width of the sidebar */
     padding: 20px;
 }
 

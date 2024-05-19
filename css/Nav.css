@@ -1,9 +1,8 @@
 @charset "UTF-8";
-
+/* Brand styles */
 .brand {
     background-color: white ;
     position: fixed;
-    padding: 10px 20px;
     top: 0;
     display: flex; /* Use flexbox */
     align-items: center; /* Vertically center the content */
@@ -15,13 +14,13 @@
 
 .brand h1 {
     margin: 0;
-    font-size: 20px;
+    font-size: 30px;
 }
 /* Navigation styles */
 .navbar {
     background-color: #333;
     position: fixed;
-    top: 50px; /* Adjusted to make space for the brand bar */
+    top: 40px; /* Adjusted to make space for the brand bar */
     left: 0;
     width: 100%;
     z-index: 997; /* Lower z-index than the brand bar */
@@ -31,13 +30,12 @@
 .navbar ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     background: black;
 }
 
 .navbar li {
     display: inline-block;
-    padding: 10px;
 }
 
 .navbar li a {
@@ -71,4 +69,16 @@
 /* Change the background color of dropdown links on hover */
 .navbar ul ul li a:hover {
     background-color: #333;
+}
+/* Content */
+.content {
+    margin-top: 100px; /* Adjust this value to make space for both brand and navbar */
+    margin-left: 250px; /* Adjust this value to match the width of the sidebar */
+    padding: 20px;
+}
+
+/* Style the content */
+.content p {
+    font-size: 18px;
+    z-index: 996;
 }

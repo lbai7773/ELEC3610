@@ -32,23 +32,29 @@
         <li><a href="register.html">Register/Login</a></li>
     </ul>
 </nav>
-<div class="content" id="content">
+<form>
+  <div class="imgcontainer">
+    <img src="img/human.jgp" alt="Avatar" class="avatar">
+  </div>
 
-       <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
-        
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-      </div>
-        <button onclick="window.location.href='account.html'" class = 'login_button'>Submit</button></div>
-      <div class="container" style="background-color:#f1f1f1">
-        <button onclick="window.location.href='home.html'" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div>
-</div>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button onclick="window.location.href='account.html'" class = 'login_button'>Submit</button></div>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+    
+  <div class="container" style="background-color:#f1f1f1">
+    <button onclick="window.location.href='home.html'" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">

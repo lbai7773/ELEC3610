@@ -14,19 +14,21 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
-login_button {
-  background-color: #04AA6D;
+/* Set a style for the login button */
+.login_button {
+  background-color: #04AA6D; /* Green background */
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 8px auto; /* Center horizontally */
+  display: block; /* Display as block element */
+  width: fit-content; /* Adjust width to fit content */
   border: none;
   cursor: pointer;
-  width: 100%;
+  border-radius: 10px; /* Add border radius for rounded corners */
 }
 
-/* Add a hover effect for buttons */
-login_button:hover {
+/* Add a hover effect for the login button */
+.login_button:hover {
   opacity: 0.8;
 }
 

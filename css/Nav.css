@@ -21,13 +21,14 @@
 /* Navigation styles */
 .navbar {
     background-color: #333;
+    align-items: center;
     position: fixed;
     top: 50px; /* Adjusted to start immediately after the brand bar (assuming .brand height is 50px including padding) */
     left: 0;
     width: 100%;
     z-index: 998; /* Lower z-index than the brand bar */
     margin: 0; /* Ensure no margin */
-    padding: 10; /* Ensure no padding */
+    padding: 0; /* Ensure no padding */
 }
 
 .navbar ul {

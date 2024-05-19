@@ -27,7 +27,7 @@
     width: 100%;
     z-index: 998; /* Lower z-index than the brand bar */
     margin: 0; /* Ensure no margin */
-    padding: 0; /* Ensure no padding */
+    padding: 10; /* Ensure no padding */
 }
 
 .navbar ul {

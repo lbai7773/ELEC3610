@@ -63,6 +63,7 @@ span.psw {
 .acc{
   float: right;
   padding-top: 16px;
+  align-items: center;
 }
 
 /* Change styles for span and cancel button on extra small screens */

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Brand styles */
 .brand {
-    background-color: white ;
+    background-color: white;
     position: fixed;
     top: 0;
     display: flex; /* Use flexbox */
@@ -9,22 +9,25 @@
     justify-content: center; /* Horizontally center the content */
     color: black;
     width: 100%;
-    z-index: 999; 
+    z-index: 999;
 }
 
 .brand h1 {
     margin: 0;
     font-size: 30px;
+    padding: 10px 0; /* Add padding for spacing instead of margin */
 }
+
 /* Navigation styles */
 .navbar {
     background-color: #333;
     position: fixed;
-    top: 40px; /* Adjusted to make space for the brand bar */
+    top: 50px; 
     left: 0;
     width: 100%;
-    z-index: 997; /* Lower z-index than the brand bar */
-    margin-top: 0px; /* Added margin to create space */
+    z-index: 998; /* Lower z-index than the brand bar */
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
 }
 
 .navbar ul {

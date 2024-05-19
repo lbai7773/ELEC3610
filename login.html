@@ -24,7 +24,7 @@
             <ul>
                 <li><a href="brand.html">Browse by Brand</a></li>
                 <li><a href="skintype.html">Browse by Skin Type</a></li>
-                <li><a href="skintype.html">Browse by Category</a></li>
+                <li><a href="category.html">Browse by Category</a></li>
             </ul>
         </li>
         <li><a href="contactus.html">Contact Us</a></li>
@@ -33,7 +33,7 @@
     </ul>
 </nav>
 <div class="content" id="content">
-    <form >
+    <form action="account.html" method="get">
       <div class="imgcontainer">
         <img src="img/human.jpg" alt="Avatar" class="avatar">
       </div>
@@ -45,14 +45,14 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
     
-        <button onclick="window.location.href='account.html'" >Submit</button>
+        <button type="submit">Submit</button>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
       </div>
         
       <div class="container" style="background-color:#f1f1f1">
-        <button onclick="window.location.href='home.html'" class="cancelbtn">Cancel</button>
+        <button type="button" onclick="window.location.href='home.html'" class="cancelbtn">Cancel</button>
         <span class="psw">Forgot <a href="#">password?</a></span>
       </div>
     </form>

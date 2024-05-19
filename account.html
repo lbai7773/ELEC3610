@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/footer.css" rel="stylesheet">
+<link href="css/account.css" rel="stylesheet">
+<link href="css/product.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="brand">
+    <h1>SampleSkin: Revolutionizing Skincare Discovery</h1>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li>
+            <a href="browse.html">Browse</a>
+            <ul>
+                <li><a href="brand.html">Browse by Brand</a></li>
+                <li><a href="skintype.html">Browse by Skin Type</a></li>
+                <li><a href="skintype.html">Browse by Category</a></li>
+            </ul>
+        </li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="shoppingcart.html">Shopping Cart</a></li>
+        <li><a href="register.html">Register/Login</a></li>
+		<li><div class="search-container">
+		    <form action="/action_page.php">
+		      <input type="text" placeholder="Search.." name="search">
+		      <button type="submit"><i class="fa fa-search"></i></button>
+		    </form>
+		  </div>
+        <li><i class="fa fa-search"></i></li>
+    </ul>
+</nav>
+
+
+<div class="sidebar">
+    <a href="account.html">Account Information</a>
+    <a href="#update" onclick="showContent('account')">Update Account</a>
+    <a href="#" onclick="showContent('order')">Order History</a>
+    <a href="#" onclick="showContent('assessment')">Skin Assessment</a>
+    <a href="#" onclick="showContent('recommended')">Recommended Products</a>
+    <a href="#" onclick="logout()">Logout</a>
+</div>
+
+
+<div class="content" id="content">
+    <div class="wrapper">
+        <div class="main">
+            <div class="container">
+                <div class="card u-mb-48 u-mt-48">
+                    <h2 class="heading u-mb-24">Account Information Summary</h2>
+                    <div class="row">
+                        <div class="col-sm-6 u-pr-8--desktop">
+                            <h3 class="h3">Personal Details</h3>
+                            <div class="row u-mb-24">
+                                <div class="col-sm-6 u-mb-24--mobile">
+                                    <label>First Name:</label>
+                                    <span id="firstname">John</span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>Last Name:</label>
+                                    <span id="lastname">Doe</span>
+                                </div>
+                            </div>
+                            <div class="row u-mb-24">
+                                <div class="col-sm-6 u-mb-24--mobile">
+                                    <label>E-Mail:</label>
+                                    <span id="email">john@example.com</span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>Telephone:</label>
+                                    <span id="telephone">1234567890</span>
+                                </div>
+                            </div>
+                            <div class="row u-mb-24">
+                                <div class="col-sm-6 u-mb-24--mobile">
+                                    <label>Fax:</label>
+                                    <span id="fax">9876543210</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Newsletter Subscription Section -->
+                    <h3 class="h3 u-mb-24">Newsletter Subscription</h3>
+                    <div class="row u-mb-24">
+                        <div class="col-sm-6 u-mb-24--mobile">
+                            <label>Subscribe:</label>
+                            <span id="newsletter">Yes</span> <!-- Assuming Yes is selected -->
+                        </div>
+                    </div>
+                    <!-- Payment Address Section -->
+                    <h3 class="h3 u-mb-24">Payment Address</h3>
+                    <div class="row u-mb-24">
+                        <div class="col-sm-6 u-pr-8--desktop">
+                            <label>Company:</label>
+                            <span id="payment-company">ABC Inc.</span>
+                            <label>Address 1:</label>
+                            <span id="payment-address1">123 Main St</span>
+                            <label>City:</label>
+                            <span id="payment-city">New York</span>
+                            <label>Post Code:</label>
+                            <span id="payment-postcode">10001</span>
+                        </div>
+                        <div class="col-sm-6 u-pl-8--desktop">
+                            <label>Country:</label>
+                            <span id="payment-country">United States</span>
+                            <label>Region / State:</label>
+                            <span id="payment-state">New York</span>
+                        </div>
+                    </div>
+                    <!-- Shipping Address Section -->
+                    <h3 class="h3 u-mb-24">Shipping Address</h3>
+                    <div class="row u-mb-24">
+                        <div class="col-sm-6 u-pr-8--desktop">
+                            <label>Company:</label>
+                            <span id="shipping-company">ABC Inc.</span>
+                            <label>Address 1:</label>
+                            <span id="shipping-address1">123 Main St</span>
+                            <label>City:</label>
+                            <span id="shipping-city">New York</span>
+                            <label>Post Code:</label>
+                            <span id="shipping-postcode">10001</span>
+                        </div>
+                        <div class="col-sm-6 u-pl-8--desktop">
+                            <label>Country:</label>
+                            <span id="shipping-country">United States</span>
+                            <label>Region / State:</label>
+                            <span id="shipping-state">New York</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/account.js"></script>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <p class="w3-medium">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+<div class="footer">
+  <img src="img/footer.jpg" alt="Footer" style="width:100%">
+</div>
+
+
+</body>
+</html>

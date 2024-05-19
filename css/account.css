@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/* Brand styles */
+.brand {
+    background-color: white ;
+    position: fixed;
+    top: 0;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    color: black;
+    width: 100%;
+    z-index: 999; 
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 30px;
+}
+/* Navigation styles */
+.navbar {
+    background-color: #333;
+    position: fixed;
+    top: 40px; /* Adjusted to make space for the brand bar */
+    left: 0;
+    width: 100%;
+    z-index: 997; /* Lower z-index than the brand bar */
+    margin-top: 10px; /* Added margin to create space */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background: black;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Style the dropdown menu */
+.navbar ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+    background: black;
+}
+
+.navbar ul ul li {
+    display: block;
+}
+
+.navbar li:hover ul {
+    display: block;
+}
+
+/* Change the background color of navbar items on hover */
+.navbar li:hover a {
+    background-color: #555; /* Change background color on hover */
+}
+
+/* Change the background color of dropdown links on hover */
+.navbar ul ul li a:hover {
+    background-color: #333;
+}
+/* Content */
+.content {
+    margin-top: 100px; /* Adjust this value to make space for both brand and navbar */
+    margin-left: 250px; /* Adjust this value to match the width of the sidebar */
+    padding: 20px;
+}
+
+/* Style the content */
+.content p {
+    font-size: 18px;
+    z-index: 996;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    margin-top: 100px; /* Adjust this value to make space for both brand and navbar */
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+    z-index: 997;
+}
+
+/* Sidebar links */
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+/* Style the sidebar links on hover */
+.sidebar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Form styles */
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #555;
+}

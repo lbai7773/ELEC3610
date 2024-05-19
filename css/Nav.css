@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+.brand {
+    background-color: white ;
+    position: fixed;
+    padding: 10px 20px;
+    top: 0;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    color: black;
+    width: 100%;
+    z-index: 999; 
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 20px;
+}
+/* Navigation styles */
+.navbar {
+    background-color: #333;
+    position: fixed;
+    top: 50px; /* Adjusted to make space for the brand bar */
+    left: 0;
+    width: 100%;
+    z-index: 997; /* Lower z-index than the brand bar */
+    margin-top: 10px; /* Added margin to create space */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar li a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Style the dropdown menu */
+.navbar ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+    background: black;
+}
+
+.navbar ul ul li {
+    display: block;
+}
+
+.navbar li:hover ul {
+    display: block;
+}
+
+/* Change the background color of navbar items on hover */
+.navbar li:hover a {
+    background-color: #555; /* Change background color on hover */
+}
+
+/* Change the background color of dropdown links on hover */
+.navbar ul ul li a:hover {
+    background-color: #333;
+}

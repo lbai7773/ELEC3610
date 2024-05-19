@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/Nav.css" rel="stylesheet">
+<link href="css/footer.css" rel="stylesheet">
+<link href="css/shoppingcart.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="brand">
+    <h1>SampleSkin: Revolutionizing Skincare Discovery</h1>
+</div>
+
+
+<!-- Navigation -->
+<nav class="navbar">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li>
+            <a href="browse.html">Browse</a>
+            <ul>
+                <li><a href="brand.html">Browse by Brand</a></li>
+                <li><a href="skintype.html">Browse by Skin Type</a></li>
+                <li><a href="skintype.html">Browse by Category</a></li>
+            </ul>
+        </li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="shoppingcart.html">Shopping Cart</a></li>
+        <li><a href="register.html">Register/Login</a></li>
+		<li><div class="search-container">
+		    <form action="/action_page.php">
+		      <input type="text" placeholder="Search.." name="search">
+		      <button type="submit"><i class="fa fa-search"></i></button>
+		    </form>
+		  </div>
+        <li><i class="fa fa-search"></i></li>
+    </ul>
+</nav>
+
+<h1>Shopping Cart</h1>
+<div class="table-image"> <!-- Add the table-image class here -->
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Brand</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example 1 -->
+            <tr>
+                <td><img src="img/purelybyron.jpg" alt="Product 1"></td>
+                <td>Brand 1</td>
+                <td>Product Name 1</td>
+                <td><input type="number" value="1" min="1" class="quantity"></td>
+                <td>$10.00</td>
+                <td>$10.00</td>
+            </tr>
+            <!-- Example 2 -->
+            <tr>
+                <td><img src="img/purelybyron.jpg" alt="Product 1"></td>
+                <td>Brand 2</td>
+                <td>Product Name 2</td>
+                <td><input type="number" value="1" min="1" class="quantity"></td>
+                <td>$15.00</td>
+                <td>$15.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/purelybyron.jpg" alt="Product 1"></td>
+                <td>Brand 3</td>
+                <td>Product Name 3</td>
+                <td><input type="number" value="1" min="1" class="quantity"></td>
+                <td>$20.00</td>
+                <td>$20.00</td>
+            </tr>
+            <!-- Example 2 -->
+            <tr>
+                <td><img src="img/purelybyron.jpg" alt="Product 1"></td>
+                <td>Brand 4</td>
+                <td>Product Name 4</td>
+                <td><input type="number" value="1" min="1" class="quantity"></td>
+                <td>$3.00</td>
+                <td>$3.00</td>
+            </tr>
+            <!-- Add more examples as needed -->
+        </tbody>
+    </table>
+    <div class="total-container">
+        <div class="total">Total: <span id="final-total">$0.00</span></div>
+        <div class="buttons">
+            <button id="update-total" class="button">Update Total</button>
+            <button id="checkout-btn" class="button">Checkout Now</button>
+        </div>
+    </div>
+    <div class="action-buttons">
+        <button onclick="window.location.href='browse.html'" class="button">Browse for More</button>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/total.js"></script>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <p class="w3-medium">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+<div class="footer">
+  <img src="img/footer.jpg" alt="Footer" style="width:100%">
+</div>
+
+</body>
+</html>

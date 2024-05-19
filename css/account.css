@@ -20,7 +20,7 @@
 .navbar {
     background-color: #333;
     position: fixed;
-    top: 40px; /* Adjusted to make space for the brand bar */
+    top: 30px; /* Adjusted to make space for the brand bar */
     left: 0;
     width: 100%;
     z-index: 997; /* Lower z-index than the brand bar */

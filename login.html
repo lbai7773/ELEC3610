@@ -33,7 +33,7 @@
     </ul>
 </nav>
 <div class="content" id="content">
-    <form action="account.html" method="post">
+    <form >
       <div class="imgcontainer">
         <img src="img/human.jpg" alt="Avatar" class="avatar">
       </div>
@@ -45,12 +45,12 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
     
-        <button type="submit">Login</button>
+        <button onclick="window.location.href='account.html'" >Submit</button>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
       </div>
-    
+        
       <div class="container" style="background-color:#f1f1f1">
         <button type="button" class="cancelbtn">Cancel</button>
         <span class="psw">Forgot <a href="#">password?</a></span>

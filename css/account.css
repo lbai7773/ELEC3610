@@ -97,6 +97,7 @@ body {
 .content {
   margin-top: 100px; /* Adjust this value to make space for both brand and navbar */
   padding: 20px;
+  margin-left: 200px
 }
 
 /* Style the content */

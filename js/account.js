@@ -419,6 +419,7 @@ function showContent(page) {
                     </div>
                 </div>
             </div>
+	    <button type="button" onclick="updateAssessment(event)">Update Skin Assessment</button>
         </section>
     `;
 }
@@ -443,6 +444,10 @@ function showContent(page) {
 
 function completeAssessment() {
   var page = 'recommended';
+  showContent(page);
+}
+function updateAssessment() {
+  var page = 'assessment';
   showContent(page);
 }
 

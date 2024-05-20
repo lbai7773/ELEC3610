@@ -1,74 +1,96 @@
 @charset "UTF-8";
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0; /* Remove default margin to prevent unwanted spacing */
+}
+
 /* Brand styles */
 .brand {
-    background-color: white ;
-    position: fixed;
-    top: 0;
-    display: flex; /* Use flexbox */
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
-    color: black;
-    width: 100%;
-    z-index: 999; 
+  background-color: white;
+  position: fixed;
+  top: 0;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  color: black;
+  width: 100%;
+  z-index: 999;
+  height: 50px; /* Define height for consistency */
 }
 
 .brand h1 {
-    margin: 0;
-    font-size: 30px;
+  margin: 0;
+  font-size: 30px;
+  padding: 10px 0; /* Add padding for spacing instead of margin */
 }
+
 /* Navigation styles */
 .navbar {
-    background-color: #333;
-    position: fixed;
-    top: 40px; /* Adjusted to make space for the brand bar */
-    left: 0;
-    width: 100%;
-    z-index: 997; /* Lower z-index than the brand bar */
-    margin-top: 10px; /* Added margin to create space */
+  background-color: black;
+  position: fixed;
+  top: 50px; /* Adjusted to start immediately after the brand bar */
+  left: 0;
+  width: 100%;
+  z-index: 998; /* Lower z-index than the brand bar */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center the content */
+  height: 50px; /* Match the height of the brand bar */
+  margin: 0; /* Ensure no margin */
+  padding: 0; /* Ensure no padding */
 }
 
 .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    background: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox to make the list horizontal */
 }
 
 .navbar li {
-    display: inline-block;
+  display: flex; /* Use flexbox to vertically center the content */
+  align-items: center; /* Vertically center the content */
 }
 
 .navbar li a {
-    color: white;
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px 20px; /* Adjust padding for spacing */
+  text-decoration: none;
+  height: 50px; /* Ensure the height matches the navbar */
+  display: flex; /* Use flexbox to center the content */
+  align-items: center; /* Vertically center the content */
 }
 
 /* Style the dropdown menu */
 .navbar ul ul {
-    position: absolute;
-    top: 100%;
-    display: none;
-    background: black;
+  position: absolute;
+  top: 100%;
+  display: none;
+  background: black;
 }
 
 .navbar ul ul li {
-    display: block;
+  display: block;
 }
 
 .navbar li:hover ul {
-    display: block;
+  display: block;
 }
 
 /* Change the background color of navbar items on hover */
 .navbar li:hover a {
-    background-color: #555; /* Change background color on hover */
+  background-color: #555; /* Change background color on hover */
 }
 
 /* Change the background color of dropdown links on hover */
 .navbar ul ul li a:hover {
-    background-color: #333;
+  background-color: #333;
 }
 /* Content */
 .content {

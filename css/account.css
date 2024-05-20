@@ -95,17 +95,29 @@ body {
 
 /* Content */
 .content {
-  margin-top: 100px; /* Adjust this value to make space for both brand and navbar */
-  padding: 20px;
-  margin-left: 200px
+    margin-top: 100px; /* Adjust this value to make space for both brand and navbar */
+    margin-left: 250px; /* Adjust this value to match the width of the sidebar */
+    padding: 20px;
 }
 
 /* Style the content */
 .content p {
-  font-size: 18px;
-  z-index: 996;
+    font-size: 18px;
+    z-index: 996;
 }
 
+/* Sidebar Navigation */
+.sidebar {
+    margin-top: 100px; /* Adjust this value to make space for both brand and navbar */
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+    z-index: 997;
+}
 margin-top: 100px; /* Adjust this value to make space for both brand and navbar */
     height: 100%;
     width: 250px;
@@ -116,6 +128,7 @@ margin-top: 100px; /* Adjust this value to make space for both brand and navbar 
     padding-top: 20px;
     z-index: 997;
 }
+
 
 /* Sidebar links */
 .sidebar a {

@@ -46,64 +46,66 @@ body {
 }
 
 .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    background: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox to make the list horizontal */
 }
 
 .navbar li {
-    display: inline-block;
+  display: flex; /* Use flexbox to vertically center the content */
+  align-items: center; /* Vertically center the content */
 }
 
 .navbar li a {
-    color: white;
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px 20px; /* Adjust padding for spacing */
+  text-decoration: none;
+  height: 50px; /* Ensure the height matches the navbar */
+  display: flex; /* Use flexbox to center the content */
+  align-items: center; /* Vertically center the content */
 }
 
 /* Style the dropdown menu */
 .navbar ul ul {
-    position: absolute;
-    top: 100%;
-    display: none;
-    background: black;
+  position: absolute;
+  top: 100%;
+  display: none;
+  background: black;
 }
 
 .navbar ul ul li {
-    display: block;
+  display: block;
 }
 
 .navbar li:hover ul {
-    display: block;
+  display: block;
 }
 
 /* Change the background color of navbar items on hover */
 .navbar li:hover a {
-    background-color: #555; /* Change background color on hover */
+  background-color: #555; /* Change background color on hover */
 }
 
 /* Change the background color of dropdown links on hover */
 .navbar ul ul li a:hover {
-    background-color: #333;
+  background-color: #333;
 }
+
 /* Content */
 .content {
-    margin-top: 100px; /* Adjust this value to make space for both brand and navbar */
-    margin-left: 250px; /* Adjust this value to match the width of the sidebar */
-    padding: 20px;
+  margin-top: 100px; /* Adjust this value to make space for both brand and navbar */
+  padding: 20px;
 }
 
 /* Style the content */
 .content p {
-    font-size: 18px;
-    z-index: 996;
+  font-size: 18px;
+  z-index: 996;
 }
 
-/* Sidebar Navigation */
-.sidebar {
-    margin-top: 100px; /* Adjust this value to make space for both brand and navbar */
+margin-top: 100px; /* Adjust this value to make space for both brand and navbar */
     height: 100%;
     width: 250px;
     position: fixed;
